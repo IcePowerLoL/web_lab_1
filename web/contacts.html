@@ -3,52 +3,65 @@
     <head>
         <meta charset="utf-8">
         <title>Контакты</title>
-        <link rel="stylehed" href="styles.css">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header>
+        <header class="header">
             <nav>
-                <a href="index.html">Главная</a><br>
-                <a href="contacts.html">Контакты</a><br>
-                <a href="galary.html">Галерея</a>
+                <a class="a-head" href="index.html">Главная</a>
+                <a class="a-head">|</a>
+                <a class="a-head" href="contacts.html">Контакты</a>
+                <a class="a-head">|</a>
+                <a class="a-head" href="gallery.html">Галерея</a>
             </nav>
         </header>
-        <h2>Связаться с нами</h2>
-        <p>Вы можете, но обязательно</p>
-        <img src="122440.jpg">
-        <h4>Адрес</h4>
-        <p>Улица Пушкина, дом Калатушкина</p>
-        <h4>Телефон</h4>
-        <ol>
-            <li>8-800-555-35-35</li>
-            <li>8-909-909-99-00</li>
-        </ol>
-        <h4>Мы Online</h4>
-        <ul>
-            <li><a href="index.html">Сайт</a></li>
-            <li><a href="mailto:rabota@mail.ru">Почта</a></li>
-        </ul>
-        <h4>Отправить сообщение</h4>
-        <form>
-            <label>Full Name</label>
-            <input type="text"><br><br>
-            <label>Email</label>
-            <input type="text"><br><br>
-            <label>Message</label>
-            <textarea rows="3" cols="30"></textarea><br><br>
-            <input type="submit" value="submit">
-        </form>
-        <img src="img8.jpg">
-        <footer>
-            <h3>Всегда рады помочь</h3>
-            <p>Окажем  наши услуги в любое время дня и ночи</p>
-            <hr>
-            <oi type="I">
-                <li>Наши контакты для связи</li>
+        <main class="content">
+            <div class="background_cont">
+
+                <p class="text_adress1">Связаться с нами, дабы высказать своё недовольство<p>
+                <p class="text_adress1">Вы можете, но обязательно</p>
+                <div class = "img_litvin">
+                    <img src="StickersLitvin_005.webp   " width="450px">
+                </div>
+                <p class="message">Отправить нам сообщение</p>
+                    <form>
+                        <label class="text">ФИО</label><br>
+                        <input class="form-input" type="text"><br><br>
+                        <label class="text">Почта</label><br>
+                        <input class="form-input" type="text"><br><br>
+                        <label class="text">Сообщение</label><br>
+                        <textarea class="form-input" rows="3" cols="30"></textarea><br><br>
+                        <input class="submit-btn" type="submit" value="Отправить">
+                    </form>
+                <div>
+                    <h4 class="adress">Связаться с нами</h4>
+                    <ol>
+                        <li class="text1">8-800-555-35-35</li>
+                        <li class="text1">8-909-909-99-00</li>
+                    </ol>
+                    
+                    <ul>
+                        <li class="text1"><a href="index.html">Сайт</a></li>
+                        <li class="text1"><a href="mailto:rabota@mail.ru">Почта</a></li>
+                    </ul>
+                </div>
+                <p class="adress">Наш адрес</p>
+                <p class="text_adress">Студенческая ул., 7, Ханты-Мансийск, Ханты-Мансийский автономный округ, 628007</p>
+                <p class="adress">Мы на картах</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.67147542188584!2d69.05882442353098!3d61.01527689801913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x439e7ad17d77e5dd%3A0x9f9f3cf0bb9acc39!2z0KHRgtGD0LTQtdC90YfQtdGB0LrQsNGPINGD0LsuLCA3LCDQpdCw0L3RgtGLLdCc0LDQvdGB0LjQudGB0LosINCl0LDQvdGC0Yst0JzQsNC90YHQuNC50YHQutC40Lkg0LDQstGC0L7QvdC-0LzQvdGL0Lkg0L7QutGA0YPQsywgNjI4MDA3!5e0!3m2!1sru!2sru!4v1788984718922!5m2!1sru!2sru" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <h3 class="heading-h3">Если нашли ошибку пишите нам</h3>
+            <h4 class="heading-h4">Наши контакты для связи:</h4>
+            <ul class="ulfoot">
                 <li>Номер телефона:+7-999-999-99-99</li>
                 <li>Почта:rabota@mail.ru</li>
-            </oi>
-            <p>ФИО Разработчика: Терехов Вячеслав Игоревич</p>
+            </ul>
+            <hr color="gray" size="1px" width="50%">
+            <p class="text_razrab">ФИО Разработчика: Терехов Вячеслав Игоревич</p>
         </footer>
     </body>
 </html>

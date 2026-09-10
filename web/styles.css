@@ -1,15 +1,65 @@
+header{
+    background: radial-gradient(#b84ad3, #4a045b);
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
 body {
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(101, 53, 213);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+ol, ul {
+    display: inline-block; /* Список станет блочным элементом шириной по содержимому */
+    text-align: center;    /* Отступ слева, чтобы маркеры не прилипали к краю */
+    list-style: none;
+}
+header nav a {
+    display: inline-block;
+    padding: 10px 10px; /* Добавьте горизонтальные отступы, чтобы ссылки не слипались */
+}
+
+.a-head{
+    color: #bddd5d;
+    text-decoration: none;
+}
+.a-head:hover{
+    color: #323722;
 }
 
 .text {
     font-size: 16px;
     line-height: 26px;
     color: #1F3F68;
+    text-align: center;
 }
-.heading-h1{
-    font-size: 64px;
-    color: #1F3F68;
+.glav-h1{
+    font-size: 45px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #420c0c;
+}
+.glavtext{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(183, 207, 207);
+}
+.backtext{
+    max-width: 1200px;              /* ограничиваем ширину блока */
+    margin: 0 auto;                /* центрируем блок по горизонтали */
+    padding: auto;                 /* внутренние отступы, чтобы текст не прилипал к краям */
+    background-color: rgba(46, 42, 42, 0.5);  /* фон одним прямоугольником */
+    border-radius: 30px;           /* скруглённые углы (по желанию) */
 }
 .heading-h2{
     font-weight: 500;
@@ -17,16 +67,23 @@ body {
     text-align: center;
 }
 .heading-h3{
-    font-size: 36px;
-    text-align: center;
+    font-size: 40px;
+    margin: 5px 0 1px 0;   /* сверху 10px, снизу 5px */
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
 }
 .heading-h4{
     font-size: 20px;
-    line-height: 30px;
-    color: #1F3F68;
+    line-height: 20px;
+    color: #000000;
+    margin: 5px 0 1px 0;          /* сверху и снизу по 5px */
+    font-family: 'Times New Roman', Times, serif;
+
 }
+
+
 .form-input{
-     border: 1px solid #356EAD;
+    border: 1px solid #356EAD;
     box-sizing: border-box;
     border-radius: 10px;
     opacity: 0.4;
@@ -41,4 +98,115 @@ body {
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+.site-footer {
+    background: radial-gradient(#b84ad3, #4a045b);
+    margin: auto;           /* Убираем внешние отступы, чтобы не было щелей по бокам */
+    width: 100%;         /* Растягиваем на 100% ширины */
+    font-size: 14px;
+    color: #e2dbdb;
+    box-sizing: border-box;
+}
+.ulfoot{
+    font-size: 20px;
+    margin: auto;
+    color: #ffffff;
+}
+.text1{
+    margin-left: -40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-decoration: none;
+    margin-top: 1px;    
+}
+
+.test {
+    flex: 1;
+    background-image: url("background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.content{
+    flex: 1;
+    display: flex;          /* делаем main flex-контейнером */
+    flex-direction: column;
+}
+.background_cont{
+    background: linear-gradient(#e1dce2, rgb(95, 95, 167));
+    background-size: 100%;
+}
+.background_gal{
+    background: linear-gradient(rgb(155, 130, 130), rgb(118, 87, 118));
+    flex: 1;
+}
+.text_galary{
+    color:#58d1de;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.gallaryimg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 150px;
+}
+
+.gallery-item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery-item figcaption {
+    margin-top: 15px;
+    font-size: 25px;
+    color: #420c0c;
+    text-align: center;
+    max-width: 250px;
+}
+
+.map{
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+    display: block;
+    margin: 20px auto;
+}
+.text_razrab{
+    color: rgb(0, 0, 0);
+
+}
+.gallery-item .nazvanie {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 20px;
+}
+.gallery-item .name{
+    color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+}
+.adress{
+    color: black;
+    font-size: 30px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.text_adress{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.text_adress1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+.message{
+    font-family: 'Times New Roman', Times, serif;
+    color: #010101;
+    font-size: 30px;
+    margin: 10px;
 }
